@@ -35,9 +35,27 @@ In this lab, you will:
 
 Use SPL queries to complete the following analysis:
 
-### ✅ Task 1: List the top 10 endpoints with failed SSH login attempts
+### ✅Task 1: List the top 10 endpoints with failed SSH login attempts
 ```spl
 index=ssh_lab sourcetype="json" auth_success=false
 | stats count by "id.orig_h"
 | sort -count
 | head 10
+```
+### ✅Task 2: Identify connections with more than 5 failed authentication attempts
+```spl
+index=ssh_lab sourcetype="json" auth_attempts>5
+| table ts "id.orig_h" "id.resp_h" auth_attempts
+```
+### ✅Task 3: Count all event types (successful, failed, no-auth, multiple-failed) seen in the logs
+```spl
+index=ssh_lab sourcetype="json"
+| stats count by event_type
+```
+
+## 📸Submission
+Submit a screenshot for each of the following:
+- Your query and result for Task 1.
+- Your query and result for Task 2.
+- Your query and result for Task 3.
+
