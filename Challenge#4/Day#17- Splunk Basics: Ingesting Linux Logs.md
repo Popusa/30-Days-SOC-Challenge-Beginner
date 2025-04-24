@@ -17,7 +17,7 @@ In this lab, you will:
 - ✅ **Data Source**: JSON-formatted Zeek DNS logs.
 - 🌐 **Log File**: Download the file below and place it in a directory accessible to Splunk for ingestion.
 
-📥 **[Download sample dns file](sandbox:/mnt/data/synthetic_zeek_dns.json)**
+📥 **[Download sample dns file](https://raw.githubusercontent.com/0xrajneesh/30-Days-SOC-Challenge-Beginner/refs/heads/main/dns_logs.json)**
 
 ---
 
