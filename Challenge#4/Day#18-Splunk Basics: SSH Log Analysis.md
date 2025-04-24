@@ -42,10 +42,10 @@ index=ssh_lab sourcetype="json" auth_success=false
 | sort -count
 | head 10
 ```
-### ✅Task 2: Identify connections with more than 5 failed authentication attempts
+### ✅Task 2: Find the number of total SSH connections
 ```spl
-index=ssh_lab sourcetype="json" auth_attempts>5
-| table ts "id.orig_h" "id.resp_h" auth_attempts
+index=ssh_lab sourcetype="json"
+| stats count as total_ssh_connections
 ```
 ### ✅Task 3: Count all event types (successful, failed, no-auth, multiple-failed) seen in the logs
 ```spl
