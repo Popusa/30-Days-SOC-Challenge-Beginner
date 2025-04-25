@@ -17,7 +17,7 @@ In this lab, you will:
 - ✅ **Data Source**: JSON-formatted Zeek-style HTTP logs.
 - 🌐 **Log File**: Download and upload to Splunk using the steps below.
 
-📥 **[Download HTTP Log file](sandbox:/mnt/data/synthetic_zeek_http.json)**
+📥 **[Download HTTP Log file](https://raw.githubusercontent.com/0xrajneesh/30-Days-SOC-Challenge-Beginner/refs/heads/main/http_logs.json)**
 
 ---
 
