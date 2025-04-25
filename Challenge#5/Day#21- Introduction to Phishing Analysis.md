@@ -1,4 +1,4 @@
-# **Day#21- Phishing Analysis: Investigating a Suspicious Email**
+# **Day#21- Introduction to Phishing Analysis**
 
 ---
 
