@@ -60,7 +60,7 @@ index=http_lab sourcetype="json" status_code>=500 status_code<600
 index=http_lab sourcetype="json" user_agent IN ("sqlmap/1.5.1", "curl/7.68.0", "python-requests/2.25.1", "botnet-checker/1.0")
 | stats count by user_agent
 ```
-✅ Task 5: Find large file transfers (greater than 500 KB)
+### ✅Task 5: Find large file transfers (greater than 500 KB)
 ```spl
 index=http_lab sourcetype="json" resp_body_len>500000
 | table ts "id.orig_h" "id.resp_h" uri resp_body_len
