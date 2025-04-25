@@ -85,7 +85,7 @@ Learn how to analyze a phishing email by examining headers, body, URLs, and atta
 
 
 
-##🧪 **Task: Investigating a Lookalike Domain Email**
+## **Task: Investigating a Lookalike Domain Email**
 
 ### Scenario:
 Your security team received a suspicious email claiming to be from PayPal. The sender address is:  
