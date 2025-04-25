@@ -42,25 +42,18 @@ index=http_lab sourcetype="json"
 | sort -count
 | head 10
 ```
-### ✅Task 2: List the top 5 most accessed suspicious URIs
-```spl
-index=http_lab sourcetype="json" uri IN ("/wp-admin", "/phpmyadmin", "/shell.php", "/admin", "/config.php", "/etc/passwd")
-| stats count by uri
-| sort -count
-| head 5
-```
 
-### ✅Task 3: Count the number of server errors (5xx) observed
+### ✅Task 2: Count the number of server errors (5xx) observed
 ```spl
 index=http_lab sourcetype="json" status_code>=500 status_code<600
 | stats count as server_errors
 ```
-### ✅Task 4: Identify User-Agents associated with possible scripted attacks
+### ✅Task 3: Identify User-Agents associated with possible scripted attacks
 ```spl
 index=http_lab sourcetype="json" user_agent IN ("sqlmap/1.5.1", "curl/7.68.0", "python-requests/2.25.1", "botnet-checker/1.0")
 | stats count by user_agent
 ```
-### ✅Task 5: Find large file transfers (greater than 500 KB)
+### ✅Task 4: Find large file transfers (greater than 500 KB)
 ```spl
 index=http_lab sourcetype="json" resp_body_len>500000
 | table ts "id.orig_h" "id.resp_h" uri resp_body_len
