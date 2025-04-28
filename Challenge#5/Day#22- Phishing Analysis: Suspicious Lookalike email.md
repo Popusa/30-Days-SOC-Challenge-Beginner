@@ -1,4 +1,4 @@
-# **Day#22- Phishing Analysis: Investigating a Suspicious Lookalike Email**
+# **Day#22- Phishing Analysis: Investigating a Phishing Email**
 
 ---
 
@@ -23,7 +23,7 @@ The objective of this lab is to analyze a real-world phishing email sample using
 ## 🧪 **Lab Task: Analyze the Suspicious Email**
 
 ### 📥 Scenario:  
-You received an email from **BANCO DO BRADESCO LIVELO** claiming that your card has **92,990 points expiring today**, sent from `banco.bradesco@atendimento.com.br`. The sender’s domain looks similar to Bradesco’s official domain.
+You received an email from **BANCO DO BRADESCO LIVELO** claiming that your card has **92,990 points expiring today**, sent from `banco.bradesco@atendimento.com.br`. 
 
 Investigate and answer the following:
 
