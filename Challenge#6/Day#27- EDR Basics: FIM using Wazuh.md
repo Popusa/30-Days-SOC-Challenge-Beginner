@@ -9,20 +9,9 @@ The objective of this task is to help students **detect and investigate unauthor
 
 ### **Requirements**  
 - **Wazuh Server:** Installed and running (Refer to Task #26).  
-- **Windows 10/11 or Windows Server 2019/2022 (Target Machine).**  
-- **Wazuh Agent installed on Windows Machine.**  
-- **Admin or PowerShell access on Windows Machine.**  
 
-### **Step 1: Install Wazuh Agent on Windows**  
-1. Download the **Wazuh Agent** from:  
-   [https://packages.wazuh.com/4.x/windows/wazuh-agent-4.x.msi](https://packages.wazuh.com/4.x/windows/wazuh-agent-4.x.msi)  
-2. Run the installer and enter the **Wazuh Server IP** when prompted.  
-3. Start the Wazuh Agent service:  
-   ```powershell
-   Start-Service WazuhSvc
-   ```
 
-### Step 2: Configure File Integrity Monitoring (FIM) in Wazuh
+### Step 1: Configure File Integrity Monitoring (FIM) in Wazuh
 1. Open Wazuh Manager Configuration on the Wazuh Server:
 ```
 sudo nano /var/ossec/etc/ossec.conf
