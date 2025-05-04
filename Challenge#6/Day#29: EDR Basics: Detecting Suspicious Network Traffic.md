@@ -141,7 +141,7 @@ Look for alert like:
 
 ET SCAN Nmap Synchronous Scan
 
-##📤 Submission
+## Submission
 Submit screenshots of:
 - Suricata service running
 - Alert in Wazuh Dashboard
