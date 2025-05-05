@@ -67,56 +67,37 @@ Suricata is an open-source, high-performance network IDS, IPS, and network monit
 
 ---
 
-### 🛠Step 1: Setting up Wazuh Agent with Suricata
 
-1. **Install Wazuh agent** on Ubuntu:
-    ```bash
-    curl -s https://packages.wazuh.com/key/GPG-KEY-WAZUH | sudo apt-key add -
-    echo "deb https://packages.wazuh.com/4.x/apt stable main" | sudo tee /etc/apt/sources.list.d/wazuh.list
-    sudo apt update && sudo apt install wazuh-agent
-    ```
+### Step 1: Installing Suricata and Rules
 
-2. **Configure the agent**:
-   - Edit: `/var/ossec/etc/ossec.conf`
-   - Set `<address>wazuh-manager-ip</address>`
+1. Install Suricata on the Ubuntu endpoint. We tested this process with version 6.0.8 and it can take some time:
 
-3. **Start agent**:
-    ```bash
-    sudo systemctl enable wazuh-agent
-    sudo systemctl start wazuh-agent
-    ```
+```
+sudo add-apt-repository ppa:oisf/suricata-stable
+sudo apt-get update
+sudo apt-get install suricata -y
+```
 
----
+2. Download and extract the Emerging Threats Suricata ruleset:
 
-### Step 2: Installing Suricata and Rules
-
-1. **Install Suricata**:
-    ```bash
-    sudo apt install suricata -y
-    ```
-
-2. **Enable EVE JSON output**:
-   - Edit `/etc/suricata/suricata.yaml`:
-     ```yaml
-     outputs:
-       - eve-log:
-           enabled: yes
-           filetype: regular
-           filename: /var/log/suricata/eve.json
-     ```
-
-3. **Update and install rules**:
-    ```bash
-    sudo suricata-update
-    ```
-
-4. **Start Suricata**:
-    ```bash
-    sudo systemctl enable suricata
-    sudo systemctl start suricata
-    ```
-
----
+```
+cd /tmp/ && curl -LO https://rules.emergingthreats.net/open/suricata-6.0.8/emerging.rules.tar.gz
+sudo tar -xvzf emerging.rules.tar.gz && sudo mkdir /etc/suricata/rules && sudo mv rules/*.rules /etc/suricata/rules/
+sudo chmod 640 /etc/suricata/rules/*.rules
+```
+3. Restart the Suricata service:
+```
+sudo systemctl restart suricata
+```
+4. Add the following configuration to the /var/ossec/etc/ossec.conf file of the Wazuh agent. This allows the Wazuh agent to read the Suricata logs file:
+```
+<ossec_config>
+  <localfile>
+    <log_format>json</log_format>
+    <location>/var/log/suricata/eve.json</location>
+  </localfile>
+</ossec_config>
+```
 
 ### Step 3: Simulate Attack using Kali Linux
 
