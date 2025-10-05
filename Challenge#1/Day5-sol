@@ -1,0 +1,42 @@
+2025-10-05T20:11:49.484477+03:00 popusaas-VirtualBox sshd[3632]: Received disconnect from 10.0.2.15 port 40412:11: Bye Bye [preauth]
+2025-10-05T20:11:49.484611+03:00 popusaas-VirtualBox sshd[3632]: Disconnected from authenticating user root 10.0.2.15 port 40412 [preauth]
+2025-10-05T20:11:49.787529+03:00 popusaas-VirtualBox sshd[3634]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.15  user=root
+2025-10-05T20:11:49.794775+03:00 popusaas-VirtualBox sshd[3638]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.15  user=root
+2025-10-05T20:11:49.820193+03:00 popusaas-VirtualBox sshd[3645]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.15  user=root
+2025-10-05T20:11:49.822742+03:00 popusaas-VirtualBox sshd[3640]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.15  user=root
+2025-10-05T20:11:49.822958+03:00 popusaas-VirtualBox sshd[3641]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.15  user=root
+2025-10-05T20:11:49.823845+03:00 popusaas-VirtualBox sshd[3636]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.15  user=root
+2025-10-05T20:11:49.824959+03:00 popusaas-VirtualBox sshd[3637]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.15  user=root
+2025-10-05T20:11:49.827436+03:00 popusaas-VirtualBox sshd[3635]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.15  user=root
+2025-10-05T20:11:49.832185+03:00 popusaas-VirtualBox sshd[3644]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.15  user=root
+2025-10-05T20:11:49.834337+03:00 popusaas-VirtualBox sshd[3647]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.15  user=root
+2025-10-05T20:11:49.837164+03:00 popusaas-VirtualBox sshd[3642]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.15  user=root
+2025-10-05T20:11:49.838557+03:00 popusaas-VirtualBox sshd[3648]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.15  user=root
+2025-10-05T20:11:49.839524+03:00 popusaas-VirtualBox sshd[3646]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.15  user=root
+2025-10-05T20:11:51.569144+03:00 popusaas-VirtualBox sshd[3634]: Failed password for root from 10.0.2.15 port 40414 ssh2
+2025-10-05T20:11:51.575163+03:00 popusaas-VirtualBox sshd[3638]: Failed password for root from 10.0.2.15 port 40424 ssh2
+2025-10-05T20:11:51.600207+03:00 popusaas-VirtualBox sshd[3645]: Failed password for root from 10.0.2.15 port 40434 ssh2
+2025-10-05T20:11:51.603909+03:00 popusaas-VirtualBox sshd[3640]: Failed password for root from 10.0.2.15 port 40426 ssh2
+2025-10-05T20:11:51.604229+03:00 popusaas-VirtualBox sshd[3641]: Failed password for root from 10.0.2.15 port 40428 ssh2
+2025-10-05T20:11:51.605365+03:00 popusaas-VirtualBox sshd[3636]: Failed password for root from 10.0.2.15 port 40420 ssh2
+2025-10-05T20:11:51.606105+03:00 popusaas-VirtualBox sshd[3637]: Failed password for root from 10.0.2.15 port 40422 ssh2
+2025-10-05T20:11:51.608633+03:00 popusaas-VirtualBox sshd[3635]: Failed password for root from 10.0.2.15 port 40416 ssh2
+2025-10-05T20:11:51.613857+03:00 popusaas-VirtualBox sshd[3644]: Failed password for root from 10.0.2.15 port 40432 ssh2
+2025-10-05T20:11:51.615202+03:00 popusaas-VirtualBox sshd[3647]: Failed password for root from 10.0.2.15 port 40438 ssh2
+2025-10-05T20:11:51.618417+03:00 popusaas-VirtualBox sshd[3642]: Failed password for root from 10.0.2.15 port 40430 ssh2
+2025-10-05T20:11:51.619199+03:00 popusaas-VirtualBox sshd[3648]: Failed password for root from 10.0.2.15 port 40440 ssh2
+2025-10-05T20:11:51.620185+03:00 popusaas-VirtualBox sshd[3646]: Failed password for root from 10.0.2.15 port 40436 ssh2
+2025-10-05T20:11:51.652074+03:00 popusaas-VirtualBox dbus-daemon[885]: [system] Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+2025-10-05T20:11:51.737987+03:00 popusaas-VirtualBox sshd[3634]: Connection closed by authenticating user root 10.0.2.15 port 40414 [preauth]
+2025-10-05T20:11:51.744315+03:00 popusaas-VirtualBox sshd[3638]: Connection closed by authenticating user root 10.0.2.15 port 40424 [preauth]
+2025-10-05T20:11:51.766349+03:00 popusaas-VirtualBox sshd[3635]: Connection closed by authenticating user root 10.0.2.15 port 40416 [preauth]
+2025-10-05T20:11:51.768255+03:00 popusaas-VirtualBox sshd[3641]: Connection closed by authenticating user root 10.0.2.15 port 40428 [preauth]
+2025-10-05T20:11:51.768301+03:00 popusaas-VirtualBox sshd[3640]: Connection closed by authenticating user root 10.0.2.15 port 40426 [preauth]
+2025-10-05T20:11:51.770227+03:00 popusaas-VirtualBox sshd[3645]: Connection closed by authenticating user root 10.0.2.15 port 40434 [preauth]
+2025-10-05T20:11:51.771749+03:00 popusaas-VirtualBox sshd[3636]: Connection closed by authenticating user root 10.0.2.15 port 40420 [preauth]
+2025-10-05T20:11:51.774927+03:00 popusaas-VirtualBox sshd[3637]: Connection closed by authenticating user root 10.0.2.15 port 40422 [preauth]
+2025-10-05T20:11:51.776434+03:00 popusaas-VirtualBox sshd[3644]: Connection closed by authenticating user root 10.0.2.15 port 40432 [preauth]
+2025-10-05T20:11:51.783046+03:00 popusaas-VirtualBox sshd[3647]: Connection closed by authenticating user root 10.0.2.15 port 40438 [preauth]
+2025-10-05T20:11:51.784888+03:00 popusaas-VirtualBox sshd[3648]: Connection closed by authenticating user root 10.0.2.15 port 40440 [preauth]
+2025-10-05T20:11:51.786405+03:00 popusaas-VirtualBox sshd[3642]: Connection closed by authenticating user root 10.0.2.15 port 40430 [preauth]
+2025-10-05T20:11:51.788882+03:00 popusaas-VirtualBox sshd[3646]: Connection closed by authenticating user root 10.0.2.15 port 40436 [preauth]
